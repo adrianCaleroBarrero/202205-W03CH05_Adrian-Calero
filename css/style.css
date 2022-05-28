@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Grape Nuts', cursive;
+    font-weight: 700;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header img {
+    width: 30vh;
+}
+header a:hover {
+    color: #e76f51;
+    transition: 0.4s;
+}
+
+.pokedex {
+    display: flex;
+    flex-wrap: wrap;
+}
+li {
+    list-style: none;
+}
+
+img {
+    width: 13vh;
+}
+li:hover {
+    transform: translateY(-5px);
+    transition: 0.4s;
+}
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: black;
+}
