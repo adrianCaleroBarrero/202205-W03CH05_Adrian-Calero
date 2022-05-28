@@ -9,3 +9,9 @@ export interface iCollect {
     previous: null | string;
     results: Array<iPoke>;
 }
+
+export interface iPokemons {
+    name: string;
+    order: number;
+    sprites: { other: { home: { front_default: string } } };
+}

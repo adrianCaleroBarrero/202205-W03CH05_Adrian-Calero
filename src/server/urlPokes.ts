@@ -1,7 +1,8 @@
-import { iCollect, iPoke } from '../interface/pokes.js';
+import { iPoke } from '../interface/pokes.js';
+import { fetchPoke } from './pokeApi.js';
 
-export const pokeCollect = async (poke: Promise<iCollect>) => {
-    const urlPokes = await poke;
+export const pokeCollect = async () => {
+    const urlPokes = await fetchPoke();
     const urls = urlPokes.results.map((item: iPoke) => {
         return item.url;
     });

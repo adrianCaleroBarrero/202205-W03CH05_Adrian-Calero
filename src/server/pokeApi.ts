@@ -6,9 +6,12 @@ export const fetchPoke = async () => {
     return pokeData;
 };
 
-export const onePokemon = async (urls: Promise<string[]>) => {
-    const response = await urls;
-    console.log(response);
+export const onePokemon = async () => {
+    const https = await pokeCollect();
+    const pokemonInfo = https.map(async (url: any) => {
+        const response = await fetch(url);
+        const pokemon = await response.json();
+        return pokemon;
+    });
+    return pokemonInfo;
 };
-
-onePokemon(pokeCollect(fetchPoke()));
