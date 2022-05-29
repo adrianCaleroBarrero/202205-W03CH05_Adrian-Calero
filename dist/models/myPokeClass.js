@@ -14,7 +14,7 @@ export class MyPokeClass extends Component {
         <p>${this.item.id} - ${this.item.name}</p>
         <div class="buttons">
         <button class="removePokemons" id="${this.item.id}">➖</button>
-        <button id="${this.item.name}">👁️</button>
+        <button class="detailpokemons" id="${this.item.name}">👁️</button>
         </div>
         </li>`;
         return html;
