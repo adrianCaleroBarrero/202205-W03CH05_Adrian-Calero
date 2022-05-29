@@ -6,7 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>PokeApi</title>
         <script src="../dist/app.js" type="module"></script>
-        <script src="../dist/detail.js" type="module"></script>
         <link
             rel="shortcut icon"
             href="../pokemon-logo.svg"
@@ -17,6 +16,10 @@
     <body>
         <slot class="header"></slot>
         <ul class="pokedex"></ul>
+        <section>
+            <button id="previous"><< Previous</button>
+            <button id="next">Next >></button>
+        </section>
         <slot class="footer"></slot>
     </body>
 </html>

@@ -1,4 +1,4 @@
-import { removePokemon } from './addRemoveandDetails.js';
+import { detailPokemon, removePokemon } from './addRemoveandDetails.js';
 import { Footer } from './components/footer.js';
 import { Header } from './components/header.js';
 import { MyPokeClass } from './models/myPokeClass.js';
@@ -14,5 +14,8 @@ const appPoke = async () => {
     document
         .querySelectorAll('.removePokemons')
         .forEach((item) => item.addEventListener('click', removePokemon));
+    document
+        .querySelectorAll('.detailpokemons')
+        .forEach((item) => item.addEventListener('click', detailPokemon));
 };
 (() => document.addEventListener('DOMContentLoaded', appPoke))();

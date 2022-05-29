@@ -9,13 +9,18 @@ export class DetailClass extends Component {
     }
     createTemplate() {
         let html = ``;
-        html += `<li>
-        <img src="${this.item.sprites}" alt="${this.item.name}">
-        <p>${this.item.id} - ${this.item.name}</p>
-        <div class="buttons">
-        <button class="addPokemons" id="${this.item.id}">➕</button>
-        <button class="detailpokemons" id="${this.item.name}">👁️</button>
+        html += `
+        <li class="retro">
+        <img class="image__detail" src="${this.item.sprites}" alt="${this.item.name}">
+        <div class="details">
+            <p>Number: ${this.item.id}</p>
+            <p>Name: ${this.item.name}</p>
+            <p>Height: ${this.item.height}</p>
+            <p>Weight: ${this.item.weight}</p>
+            
         </div>
+        
+        
         </li>`;
         return html;
     }
