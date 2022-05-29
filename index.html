@@ -10,11 +10,8 @@
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
-        <header>
-            <a href="index.html">Home</a>
-            <img src="pngwing.com.png" alt="Pokemon" />
-            <a href="">My Pokemons </a>
-        </header>
+        <slot class="header"></slot>
         <ul class="pokedex"></ul>
+        <slot class="footer"></slot>
     </body>
 </html>

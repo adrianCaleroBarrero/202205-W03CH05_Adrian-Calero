@@ -1,3 +1,8 @@
+export interface iComponent {
+    template: string;
+    createTemplate(): string;
+}
+
 export interface iPoke {
     name: string;
     url: string;

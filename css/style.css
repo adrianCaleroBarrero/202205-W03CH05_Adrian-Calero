@@ -14,7 +14,10 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 15vh;
+    background-color: black;
 }
+
 header img {
     width: 30vh;
 }
@@ -38,9 +41,29 @@ li:hover {
     transform: translateY(-5px);
     transition: 0.4s;
 }
+button {
+    background-color: #83c5be;
+    border-style: none;
+    width: 5vh;
+    height: 3vh;
+    border-radius: 0.8rem;
+}
+button:hover {
+    background-color: #2ef9e1;
+    transition: 0.8s;
+}
 a:link,
 a:visited,
 a:active {
     text-decoration: none;
-    color: black;
+    color: #ffffff;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 15vh;
+    background-color: black;
+    color: #ffffff;
 }
