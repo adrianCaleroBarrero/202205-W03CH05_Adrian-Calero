@@ -1,4 +1,29 @@
 {
-    "pokemon": []
+  "pokemon": [
+    {
+      "id": 2,
+      "name": "ivysaur",
+      "sprites": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/2.png"
+    },
+    {
+      "id": 3,
+      "name": "venusaur",
+      "sprites": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/3.png"
+    },
+    {
+      "id": 1,
+      "name": "bulbasaur",
+      "sprites": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/1.png"
+    },
+    {
+      "id": 39,
+      "name": "jigglypuff",
+      "sprites": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/39.png"
+    },
+    {
+      "id": 6,
+      "name": "charizard",
+      "sprites": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/6.png"
+    }
+  ]
 }
-
