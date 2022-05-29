@@ -12,6 +12,5 @@ export const localPokemon = () => {
 };
 export function addHandlerButton(item) {
     let plus = document.getElementById(`${item.id}`);
-    console.log(plus);
-    plus.addEventListener('click', () => localPokemon());
+    plus.addEventListener('click', localPokemon);
 }
