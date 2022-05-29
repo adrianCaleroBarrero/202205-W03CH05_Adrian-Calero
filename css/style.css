@@ -3,12 +3,19 @@
 * {
     box-sizing: border-box;
 }
+html {
+    height: 100%;
+}
 body {
     margin: 0;
     padding: 0;
     width: 100%;
+    height: 100%;
     font-family: 'Grape Nuts', cursive;
     font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 header {
     display: flex;
@@ -28,7 +35,9 @@ header a:hover {
 
 .pokedex {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
+    align-items: center;
 }
 li {
     list-style: none;
@@ -48,6 +57,7 @@ button {
     height: 3vh;
     border-radius: 0.8rem;
 }
+
 button:hover {
     background-color: #2ef9e1;
     transition: 0.8s;
@@ -66,4 +76,36 @@ footer {
     height: 15vh;
     background-color: black;
     color: #ffffff;
+}
+
+.image__detail {
+    width: 25vh;
+    border: 5px solid #e76f51;
+}
+
+.retro {
+    border: 5px double #e76f51;
+    margin: 0;
+    padding: 0;
+}
+
+.details p {
+    text-align: center;
+    border: 5px solid #e76f51;
+    margin: 0;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section button {
+    margin: 2rem;
+    width: 13vh;
+    height: 5vh;
+    text-align: center;
+    font-family: 'Grape Nuts', cursive;
+    font-size: larger;
+    font-weight: 600;
 }
