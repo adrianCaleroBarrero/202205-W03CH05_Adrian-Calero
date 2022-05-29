@@ -5,17 +5,21 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>PokeApi</title>
-        <script src="../dist/myApp.js" type="module"></script>
+        <script src="dist/add.js" type="module"></script>
         <link
             rel="shortcut icon"
             href="../pokemon-logo.svg"
             type="image/x-icon"
         />
-        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
         <slot class="header"></slot>
         <ul class="pokedex"></ul>
+        <section>
+            <button id="previous"><< Previous</button>
+            <button id="next">Next >></button>
+        </section>
         <slot class="footer"></slot>
     </body>
 </html>
