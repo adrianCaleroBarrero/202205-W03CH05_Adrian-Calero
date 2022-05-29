@@ -1,4 +1,4 @@
-import { addPokemon } from './add.js';
+import { addPokemon } from './addAndRemove.js';
 import { Footer } from './components/footer.js';
 import { Header } from './components/header.js';
 import { PokeClass } from './models/pokeClass.js';
