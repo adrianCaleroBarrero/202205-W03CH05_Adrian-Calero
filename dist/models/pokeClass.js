@@ -11,7 +11,11 @@ export class PokeClass extends Component {
         let html = ``;
         html += `<li>
         <img src="${this.item.sprites.other.home.front_default}" alt="${this.item.name}">
-        <p>${this.item.order} - ${this.item.name}</p>
+        <p>${this.item.id} - ${this.item.name}</p>
+        <div class="buttons">
+        <button class="addPokemons" id="${this.item.id}">➕</button>
+        <button id="${this.item.name}">👁️</button>
+        </div>
         </li>`;
         return html;
     }
