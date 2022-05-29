@@ -17,6 +17,6 @@ export interface iCollect {
 
 export interface iPokemons {
     name: string;
-    order: number;
+    id: number;
     sprites: { other: { home: { front_default: string } } };
 }

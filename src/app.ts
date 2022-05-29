@@ -1,3 +1,4 @@
+import { addHandlerButton } from './buttons.js';
 import { Footer } from './components/footer.js';
 import { Header } from './components/header.js';
 import { PokeClass } from './models/pokeClass.js';
@@ -11,6 +12,7 @@ const app = async () => {
     let pokemons = Promise.all(list);
     (await pokemons).forEach((item) => {
         new PokeClass('.pokedex', item);
+        addHandlerButton(item);
     });
 };
 (() => document.addEventListener('DOMContentLoaded', app))();

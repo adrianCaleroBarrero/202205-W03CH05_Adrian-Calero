@@ -11,8 +11,8 @@ export class Header extends Component implements iComponent {
         return `
         <header>
             <a href="index.html">Home</a>
-            <img src="pngwing.com.png" alt="Pokemon" />
-            <a href="">My Pokemons </a>
+            <img src="../pngwing.com.png" alt="Pokemon" />
+            <a href="myPokemons.html">My Pokemons </a>
         </header>
         `;
     }
