@@ -1,4 +1,4 @@
-import { iComponent } from '../interface/pokes.js';
+import { iComponent } from '../interface/pokes';
 import { Component } from './component.js';
 
 export class Footer extends Component implements iComponent {
